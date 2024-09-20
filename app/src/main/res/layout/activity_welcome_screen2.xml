@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen2">
+
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Back Arrow"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="249dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:text="Welcome to App-lock"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backarrow"
+        app:layout_constraintStart_toEndOf="@+id/backarrow"
+        app:layout_constraintTop_toTopOf="@+id/backarrow"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/illustration_image"
+        android:layout_width="385dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Illustration"
+        android:scaleType="centerInside"
+        android:src="@drawable/welcomtwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+
+        app:layout_constraintHeight_percent="0.5"/>
+
+
+    <ImageView
+        android:id="@+id/rounded_bottom_section"
+        android:layout_width="380dp"
+        android:layout_height="335dp"
+
+        android:layout_marginTop="340dp"
+
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/illustration_image" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="80dp"
+        android:text="skip"
+        android:textColor="#FFD700"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/gradient_background"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="16dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/skip"
+        app:layout_constraintStart_toEndOf="@+id/skip"
+        app:layout_constraintTop_toTopOf="@+id/skip" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="secure your phone and protect\n
+           your apps and data"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/rounded_bottom_section"
+        app:layout_constraintTop_toBottomOf="@+id/illustration_image" />"
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

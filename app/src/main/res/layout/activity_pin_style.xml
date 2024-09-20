@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinStyle">
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Set/Use Pattern"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_arrow"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow" />
+
+    <ImageView
+        android:id="@+id/iv_illustration"
+        android:layout_width="293dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/pinimage"
+        app:layout_constraintDimensionRatio="1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Set/Use Pattern Button -->
+
+
+    <!-- Set/Use Pin Button -->
+
+    <ImageView
+        android:id="@+id/rounded_bottom_section"
+        android:layout_width="400dp"
+        android:layout_height="555dp"
+        android:layout_marginTop="148dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_illustration" />
+
+    <Button
+        android:id="@+id/pattern"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_background"
+        android:text="4-digit Password"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/iv_illustration"
+        app:layout_constraintStart_toStartOf="@+id/iv_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="6-digit password"
+        android:textColor="@android:color/black"
+        android:clickable="true"
+
+        app:layout_constraintEnd_toEndOf="@+id/pattern"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pattern"
+        app:layout_constraintTop_toBottomOf="@id/pattern" />
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/btn_gradient_background"
+        android:text="Start Now"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Select Your Pattern Style"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/iv_illustration"
+        app:layout_constraintStart_toStartOf="@+id/iv_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/iv_illustration" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

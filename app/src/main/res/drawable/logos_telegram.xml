@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="50"
+    android:viewportHeight="50">
+  <group>
+    <clip-path
+        android:pathData="M0,0h50v50h-50z"/>
+    <path
+        android:pathData="M25,0C18.371,0 12.008,2.636 7.324,7.322C2.636,12.011 0.001,18.369 0,25C0,31.628 2.637,37.991 7.324,42.678C12.008,47.364 18.371,50 25,50C31.629,50 37.992,47.364 42.676,42.678C47.363,37.991 50,31.628 50,25C50,18.372 47.363,12.009 42.676,7.322C37.992,2.636 31.629,0 25,0Z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:startX="2500"
+            android:startY="0"
+            android:endX="2500"
+            android:endY="5000"
+            android:type="linear">
+          <item android:offset="0" android:color="#FF2AABEE"/>
+          <item android:offset="1" android:color="#FF229ED9"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="M11.316,24.736C18.605,21.561 23.465,19.468 25.895,18.456C32.84,15.568 34.281,15.067 35.223,15.05C35.43,15.047 35.891,15.098 36.191,15.341C36.441,15.546 36.512,15.823 36.547,16.018C36.578,16.213 36.621,16.656 36.586,17.002C36.211,20.955 34.582,30.548 33.754,34.976C33.406,36.849 32.715,37.478 32.047,37.539C30.594,37.672 29.492,36.579 28.086,35.658C25.887,34.215 24.645,33.318 22.508,31.91C20.039,30.284 21.641,29.39 23.047,27.929C23.414,27.546 29.813,21.728 29.934,21.2C29.949,21.134 29.965,20.888 29.816,20.758C29.672,20.628 29.457,20.673 29.301,20.708C29.078,20.758 25.566,23.081 18.754,27.678C17.758,28.363 16.855,28.697 16.043,28.679C15.152,28.66 13.434,28.175 12.156,27.76C10.594,27.251 9.348,26.982 9.457,26.117C9.512,25.667 10.133,25.207 11.316,24.736Z"
+        android:fillColor="#ffffff"/>
+    <path
+        android:pathData="M27,2h23v22h-23z"
+        android:strokeWidth="4"
+        android:fillColor="#ffffff"
+        android:strokeColor="#3B3B3B"/>
+  </group>
+</vector>

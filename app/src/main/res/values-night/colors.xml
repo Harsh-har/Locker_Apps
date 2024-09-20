@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#FFFFFF</color>
+    <color name="primaryLightColor">#BB86FC</color>
+    <color name="primaryDarkColor">#3700B3</color>
+    <color name="cardbgColor">#FFFFFF</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="patternColor">#000000</color>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LockActivity">
+
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Back Arrow"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Lock Options"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_arrow"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow" />
+
+    <ImageView
+        android:id="@+id/iv_illustration"
+        android:layout_width="293dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/removelo"
+        app:layout_constraintDimensionRatio="1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Set/Use Pattern Button -->
+
+    <ImageView
+        android:id="@+id/rounded_bottom_section"
+        android:layout_width="400dp"
+        android:layout_height="560dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="152dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_illustration" />
+
+    <Button
+        android:id="@+id/btn_fingerprint"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_background"
+        android:text="Finger Print"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/iv_illustration"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/iv_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_pattern"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="Set/Use Pattern"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fingerprint"
+        app:layout_constraintStart_toStartOf="@+id/btn_fingerprint"
+        app:layout_constraintTop_toBottomOf="@id/btn_fingerprint" />
+
+    <!-- Set/Use Pin Button -->
+    <Button
+        android:id="@+id/btn_pin"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="Set/Use Pin"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_pattern"
+        app:layout_constraintStart_toStartOf="@+id/btn_pattern"
+        app:layout_constraintTop_toBottomOf="@id/btn_pattern" />
+
+    <Button
+        android:id="@+id/btn_face_unlock"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="Face Unlock"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_pin"
+        app:layout_constraintStart_toStartOf="@+id/btn_pin"
+        app:layout_constraintTop_toBottomOf="@id/btn_pin" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_gradient_background"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/btn_face_unlock"
+        app:layout_constraintStart_toStartOf="@+id/btn_face_unlock"
+        app:layout_constraintTop_toBottomOf="@+id/btn_face_unlock" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:text="Choose Lock option to Private\n            your apps and data"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/iv_illustration"
+        app:layout_constraintStart_toStartOf="@+id/iv_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/iv_illustration" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
